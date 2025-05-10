@@ -302,27 +302,27 @@ footer .warning__ai {
     }
 
     h1 {
-        font-size: 50px;     /* 84px - 62 */
+        font-size: 3.125rem;     /* 50px */
     }
     
     h2 {
-        font-size: 42px;      /* 72px - 50 */
+        font-size: 2.625rem;      /* 42px */
     }
     
     h3 {
-        font-size: 34px;        /* 64px - 42 */
+        font-size: 2.125rem;        /* 34px */
     }
     
     h4 {
-        font-size: 26px;      /* 56px - 34 */
+        font-size: 1.625rem;      /* 26px */
     }
     
     h5 {
-        font-size: 20px;        /* 48px - 26 */
+        font-size: 1.5rem;        /* 24px */
     }
     
     h6 {
-        font-size: 18px;       /* 42px - 20px */
+        font-size: 1.375rem; /* 22px */
     }
     
     pre, code {
@@ -396,17 +396,16 @@ footer .warning__ai {
     }
 
     .blog h1 {
-        font-size: 42px;
-        /* font-weight: 800; */
+        font-size: 2.625rem; /* 42px; */
     }
 
     .blog h2 {
-        font-size: 34px;
+        font-size: 2.125rem; /* 34px; */
         margin-top: 3rem;
     }
 
     .blog h3 {
-        font-size: 26px;
+        font-size: 1.625rem; /* 26px; */
         margin: 0;
     }
 
@@ -434,7 +433,7 @@ footer .warning__ai {
         margin-bottom: 2.5rem;
     }
     .blog__entry h5 {
-        font-size: 24px;
+        font-size: 1.5rem; /*24px*/
         margin: 0;
     }
 
