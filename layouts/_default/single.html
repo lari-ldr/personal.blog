@@ -1,8 +1,24 @@
 {{ define "main" }}
-<div style="margin:25px;">
+<section class="post">
     <h1>{{.Title}}</h1>
-    <div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
-    <div style="color:grey; font-size:16px;">{{if .Params.author}}Author: {{.Params.Author}}{{end}}</div>
-    <div style="font-size:18px;">{{.Content}}</div>
-</div>
+    <h3 class="post__frontmatter--date">{{if .Date}}{{ dateFormat "January 2, 2006" .Date }}{{end}}</h3>
+    <p class="post__frontmatter">{{if .Params.author}}<b>Author:</b> {{.Params.Author}}{{end}}</p>
+    <p class="post__frontmatter">
+        {{if .Params.categories}}<b>Categories:</b>
+            {{ range .Params.categories }}
+                <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        {{end}}
+    </p>
+    <p class="post__frontmatter">
+        {{if .Params.tags}}<b>Tags:</b>
+            {{ range .Params.tags }}
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        {{end}}
+    </p>
+    <article class="post__content">
+        {{.Content}}
+    </article>
+</section>
 {{ end }}

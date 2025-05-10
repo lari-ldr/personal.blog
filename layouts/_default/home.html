@@ -1,13 +1,17 @@
 {{ define "main" }}
 <section class="container centered">
     <div class="home">
-        <h1>Larissa Dantas Requena</h1>
-        <h2>Full stack developer, UI Design, Arts and other things</h2>
-        <ul class="list">
-            <li><a href="/contact">Email</a></li>
-            <li><a href="https://github.com/lari-ldr">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/larissarequena/">LinkedIn</a></li>
-        </ul>
+        <h1>{{ .Site.Params.author }}</h1>
+        <h2>{{ .Site.Params.info }}</h2>
+        {{ with .Site.Params.social }}
+            <ul class="list">
+                {{ range sort . "weight" }}
+                <li>
+                    <a href="{{ .url }}">{{ .name }}</a>
+                  </li>
+                {{ end }}
+            </ul>
+        {{ end }}
     </div>
 </section>
 {{ end }}

@@ -3,11 +3,14 @@ title = 'larissaldr'
 languageCode = 'en-us'
 # timeZone = "Brazil"
 # theme = "ldr-hugo-theme"
-
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 [params]
     author = "Larissa Dantas Requena"
     info = "Full stack developer, UI Design, Arts and other things"
     description = "My name is Larissa Dantas Requena, full stack software engineer"
+    warning = "All content on this blog is handwritten. No AI-generated content is used."
     keywords = "larissa dantas requena, larissa, dantas, requena"
 
 [[params.social]]
