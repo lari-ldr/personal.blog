@@ -215,8 +215,6 @@ th {
 
 .blog h2 {
     font-family: var(--font-family-mono);
-    /* margin-top: 6rem; */
-    /* margin-bottom: 6rem; */
 }
 
 .blog h3 {
@@ -226,25 +224,8 @@ th {
 }
 
 .blog__year {
-    /* margin-left: 2rem; */
-    /* margin-top: 2rem; */
     padding-bottom: 4rem;
     border-bottom: 0.125rem solid var(--border-color);
-}
-
-.blog__month {
-    /* margin-left: 2rem; */
-    /* display: flex; */
-    /* align-items: flex-start; */
-}
-
-.blog__month--header {
-    /* margin: 1rem 0; */
-    /* width: 12.5rem; */
-}
-
-.blog__post {
-    /* width: 100%; */
 }
 
 .blog__entry {
