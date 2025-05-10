@@ -6,7 +6,7 @@ draft: true
 categories: ["cat1"]
 tags: ["tag1"]
 ---
-# Guia de Sintaxe Markdown
+<!-- # Guia de Sintaxe Markdown
 
 ## Títulos
 
@@ -16,7 +16,7 @@ tags: ["tag1"]
 ### Título 3
 #### Título 4
 ##### Título 5
-###### Título 6
+###### Título 6 -->
 
 JOI Energy is a new start-up in the energy industry. Rather than selling energy they want to differentiate themselves
 from the market by recording their customers' energy usage from their smart meters and recommending the best supplier to
