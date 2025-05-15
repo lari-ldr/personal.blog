@@ -1,5 +1,5 @@
 ---
-title: "Titulo de um post qualquer"
+title: "Title of a random post"
 date: 2025-04-18T16:37:47-03:00
 author: "Larissa Dantas Requena"
 draft: true
@@ -18,16 +18,11 @@ tags: ["tag1"]
 ##### Título 5
 ###### Título 6 -->
 
-JOI Energy is a new start-up in the energy industry. Rather than selling energy they want to differentiate themselves
-from the market by recording their customers' energy usage from their smart meters and recommending the best supplier to
-meet their needs.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed odio a mauris vehicula fermentum. In non arcu sit amet diam efficitur porta. Vivamus quis vestibulum elit, vel sollicitudin elit. Integer non lorem lacus. Aenean porta justo et magna vestibulum laoreet. Phasellus viverra dolor id nisl commodo, a scelerisque neque pretium.
 
-You have been placed into their development team, whose current goal it is to produce an API which their customers and
-smart meters will interact with.
+Suspendisse potenti. Curabitur quis nunc ut erat posuere tincidunt. Donec tristique vestibulum urna, a hendrerit justo tincidunt nec. Maecenas sed libero non urna blandit lacinia. Duis vestibulum fermentum nisi non congue. Ut tincidunt tellus nec augue vehicula, nec sollicitudin enim dapibus. Pellentesque porta felis sed velit tempor pretium.
 
-Unfortunately, two members of the team are on annual leave, and another one has called in sick! You are left with
-another ThoughtWorker to progress with the current user stories on the story wall. This is your chance to make an impact
-on the business, improve the code base and deliver value.
+Praesent ac nulla tincidunt, pretium tellus ac, fringilla ante. Mauris imperdiet nisi vitae justo facilisis fermentum. Pellentesque ac laoreet velit. Curabitur iaculis congue magna, non fermentum ex. Nulla facilisi. Sed at nibh sed purus interdum placerat nec id purus. Cras dictum porta malesuada.
 
 ## Ênfase
 

@@ -59,11 +59,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.link-emphasis {
-    color: var(--font-color-green);
-    font-family: var(--font-family-mono);
-}
-
 h1 {
     font-family: var(--font-family-mono);
     font-size: 5.25rem;     /* 84px */

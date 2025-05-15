@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="container centered">
+    <div class="home">
+        <h1>404</h1>
+        <h2>{{ .Site.Params.notFoundTitle }}</h2>
+        <p>{{ .Site.Params.notFoundDescription }}</p>
+        <a class="link-emphasis" href="{{ .Site.BaseURL }}">{{ .Site.Params.notFoundGoHome }}</a>
+    </div>
+</section>
+{{ end }}

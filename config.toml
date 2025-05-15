@@ -1,8 +1,7 @@
-baseURL = 'http://192.168.100.66:1313'
+baseURL = 'http://localhost:1313'
 title = 'larissaldr'
-languageCode = 'en-us'
-# timeZone = "Brazil"
-# theme = "ldr-hugo-theme"
+defaultContentLanguageInSubdir = false
+disableDefaultLanguageRedirect = false
 [taxonomies]
   category = "categories"
   tag = "tags"
@@ -12,7 +11,9 @@ languageCode = 'en-us'
     description = "My name is Larissa Dantas Requena, full stack software engineer"
     warning = "All content on this blog is handwritten. No AI-generated content is used."
     keywords = "larissa dantas requena, larissa, dantas, requena"
-
+    notFoundTitle = "Page Not Found"
+    notFoundDescription = "This page does not exist."
+    notFoundGoHome = "Go to homepage"
 [[params.social]]
     name = "Email"
     weight = 1
@@ -25,8 +26,6 @@ languageCode = 'en-us'
     name = "LinkedIn"
     weight = 3
     url = "https://www.linkedin.com/in/larissarequena/"
-
-# Menu links
 [[menu.main]]
     name = "About"
     weight = 1

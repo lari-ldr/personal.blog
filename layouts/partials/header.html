@@ -1,38 +1,34 @@
 <script>
-  function toggleMenu() {
-    const x = document.getElementById("topnav-items");
-    console.log(x);
-    if (x.className === "topnav-list") {
-      x.className += " navopen";
-    } else {
-      x.className = "topnav-list";
-    }
-  }
+document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('#ldr-darkmode');
+
+  checkbox.checked = localStorage.getItem('ldrdarkmode') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('ldrdarkmode', event.currentTarget.checked);
+  });
+});
 </script>
 <header>
     <nav class="navigation">
       <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
       {{ with .Site.Menus.main }}
-        <!-- <a href="javascript:void(0);" class="mobilemenu" onclick="toggleMenu()">Menu</a> -->
         <ul class="list" id="navigation__menu">
           {{ range sort . }}
           <li>
             <a href="{{ .URL }}">{{ .Name }}</a>
           </li>
         {{ end }}
+        <li>
+          <label for="ldr-darkmode" class="switch">
+            <input id="ldr-darkmode" type="checkbox" />
+            <span class="slider round">
+              <span class="icon sun round">{{ partial "icons/sun.html" . }}</span>
+              <span class="icon moon round">{{ partial "icons/moon.html" . }}</span>
+            </span>
+          </label>
+        </li>
         </ul>
       {{ end }}
     </nav>
-
-    <!-- {{ with .Site.Menus.main }}
-    <div style="display: flex;">
-        <ul style="margin-left: auto; background: lightblue; padding: 1rem; display: flex; flex-direction: column; list-style: none; width: 20rem;">
-          {{ range sort . }}
-          <li>
-            <a href="{{ .URL }}">{{ .Name }}</a>
-          </li>
-        {{ end }}
-        </ul>
-      </div> 
-      {{end}} -->
 </header>
