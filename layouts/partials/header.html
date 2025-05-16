@@ -1,34 +1,10 @@
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const checkbox = document.querySelector('#ldr-darkmode');
-
-  checkbox.checked = localStorage.getItem('ldrdarkmode') === 'true';
-
-  checkbox.addEventListener('change', function (event) {
-    localStorage.setItem('ldrdarkmode', event.currentTarget.checked);
-  });
-});
-</script>
 <header>
     <nav class="navigation">
-      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-      {{ with .Site.Menus.main }}
-        <ul class="list" id="navigation__menu">
-          {{ range sort . }}
-          <li>
-            <a href="{{ .URL }}">{{ .Name }}</a>
-          </li>
-        {{ end }}
-        <li>
-          <label for="ldr-darkmode" class="switch">
-            <input id="ldr-darkmode" type="checkbox" />
-            <span class="slider round">
-              <span class="icon sun round">{{ partial "icons/sun.html" . }}</span>
-              <span class="icon moon round">{{ partial "icons/moon.html" . }}</span>
-            </span>
-          </label>
-        </li>
-        </ul>
-      {{ end }}
+      <a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+      <div class="navigation__menu">
+        {{ partial "menu/links.html" . }}
+        <div class="navigation__separator"></div>
+        {{ partial "menu/preferences.html" . }}
+      </div>
     </nav>
 </header>

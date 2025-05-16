@@ -1,0 +1,34 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const checkbox = document.querySelector('#ldr-darkmode');
+    
+      checkbox.checked = localStorage.getItem('ldrdarkmode') === 'true';
+    
+      checkbox.addEventListener('change', function (event) {
+        localStorage.setItem('ldrdarkmode', event.currentTarget.checked);
+      });
+    });
+</script>
+<ul class="list" id="navigation__menu">
+    <li>
+        <label for="ldr-darkmode" class="switch">
+        <input id="ldr-darkmode" type="checkbox" />
+        <span class="slider round">
+            <span class="icon sun round">{{ partial "icons/sun.html" . }}</span>
+            <span class="icon moon round">{{ partial "icons/moon.html" . }}</span>
+        </span>
+        </label>
+    </li>
+    {{ with .Translations }}
+        <li>
+        {{ range . }}
+            {{ if eq .Language.Lang $.Language.Lang }}
+            <a aria-current="page" href="{{ .RelPermalink }}">{{ .Language.Lang }}</a>
+            {{ else }}
+            <a class="language" href="{{ .RelPermalink }}">{{ .Language.Lang }}</a>
+            {{ end }}
+        {{ end }}
+        </li>
+    {{ end }}
+</ul>
+        

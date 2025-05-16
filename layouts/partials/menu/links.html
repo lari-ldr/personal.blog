@@ -1,0 +1,9 @@
+{{ with .Site.Menus.main }}
+    <ul class="list" id="navigation__menu">
+    {{ range sort . }}
+    <li>
+        <a href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+    </ul>
+{{ end }}

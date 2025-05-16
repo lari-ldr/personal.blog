@@ -1,40 +1,85 @@
 baseURL = 'http://localhost:1313'
 title = 'larissaldr'
-defaultContentLanguageInSubdir = false
+languageCode = 'en-us'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
 disableDefaultLanguageRedirect = false
 [taxonomies]
   category = "categories"
   tag = "tags"
-[params]
-    author = "Larissa Dantas Requena"
-    info = "Full stack developer, UI Design, Arts and other things"
-    description = "My name is Larissa Dantas Requena, full stack software engineer"
-    warning = "All content on this blog is handwritten. No AI-generated content is used."
-    keywords = "larissa dantas requena, larissa, dantas, requena"
-    notFoundTitle = "Page Not Found"
-    notFoundDescription = "This page does not exist."
-    notFoundGoHome = "Go to homepage"
-[[params.social]]
-    name = "Email"
-    weight = 1
-    url = "/contact"
-[[params.social]]
-    name = "Github"
-    weight = 2
-    url = "https://github.com/lari-ldr"
-[[params.social]]
-    name = "LinkedIn"
-    weight = 3
-    url = "https://www.linkedin.com/in/larissarequena/"
-[[menu.main]]
-    name = "About"
-    weight = 1
-    url  = "/about/"
-[[menu.main]]
-    name = "Blog"
-    weight = 2
-    url = "/blog/"
-[[menu.main]]
-    name = "Contact"
-    weight = 3
-    url = "/contact/"
+
+[languages]
+    [languages.en]
+        contentDir = 'content/english'
+        disabled = false
+        languageCode = 'en-us'
+        languageDirection = 'ltr'
+        languageName = 'English'
+        weight = 1
+        [languages.en.params]
+            author = "Larissa Dantas Requena"
+            info = "Full stack developer, UI Design, Arts and other things"
+            description = "My name is Larissa Dantas Requena, full stack software engineer"
+            warning = "All content on this blog is handwritten. No AI-generated content is used."
+            designRefs = "All design references used in this blog can be found on the About page."
+            keywords = "larissa dantas requena, larissa, dantas, requena"
+            notFoundTitle = "Page Not Found"
+            notFoundDescription = "This page does not exist."
+            notFoundGoHome = "Go to homepage"
+        [[languages.en.params.social]]
+            name = "Github"
+            weight = 1
+            url = "https://github.com/lari-ldr"
+        [[languages.en.params.social]]
+            name = "LinkedIn"
+            weight = 2
+            url = "https://www.linkedin.com/in/larissarequena/"
+        [[languages.en.menu.main]]
+            name = "About"
+            weight = 1
+            pageRef  = "about.md"
+        [[languages.en.menu.main]]
+            name = "Blog"
+            weight = 2
+            pageRef = "/blog/"
+        [[languages.en.menu.main]]
+            name = "Contact"
+            weight = 3
+            pageRef = "contact.md"
+    [languages.pt]
+        contentDir = 'content/portuguese'
+        disabled = false
+        languageCode = 'pt-BR'
+        languageDirection = 'ltr'
+        languageName = 'Portuguese'
+        weight = 2
+        [languages.pt.params]
+            author = "Larissa Dantas Requena"
+            info = "Desenvolvedora Full stack, UI Design, Artes e outras coisas"
+            description = "Meu nome é Larissa Dantas Requena, sou desenvolvedora full stack"
+            warning = "Todo o  conteúdo publicado neste blog é escrito por mim. Nenhum conteúdo gerado por IA é utilizado."
+            designRefs = "Todas as referências de design usadas neste blog podem ser encontradas na página Sobre."
+            keywords = "larissa dantas requena, larissa, dantas, requena"
+            notFoundTitle = "Página Não Encontrada"
+            notFoundDescription = "Esta página não existe."
+            notFoundGoHome = "Ir para a home"
+        [[languages.pt.params.social]]
+            name = "Github"
+            weight = 1
+            url = "https://github.com/lari-ldr"
+        [[languages.pt.params.social]]
+            name = "LinkedIn"
+            weight = 2
+            url = "https://www.linkedin.com/in/larissarequena/"
+        [[languages.pt.menu.main]]
+            name = "Sobre"
+            weight = 1
+            pageRef  = "about.md"
+        [[languages.pt.menu.main]]
+            name = "Blog"
+            weight = 2
+            pageRef = "/blog/"
+        [[languages.pt.menu.main]]
+            name = "Contato"
+            weight = 3
+            pageRef = "contact.md"
