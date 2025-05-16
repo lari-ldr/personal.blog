@@ -1,10 +1,12 @@
 <header>
     <nav class="navigation">
       <a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
-      <div class="navigation__menu">
+      <div class="navigation__actions">
         {{ partial "menu/links.html" . }}
         <div class="navigation__separator"></div>
         {{ partial "menu/preferences.html" . }}
+        <button popovertarget="mobileMenuPopover" class="navigation__menu-mobile-toggle">Menu</button>
+        {{ partial "menu/links-mobile.html" . }}
       </div>
     </nav>
 </header>
