@@ -18,10 +18,11 @@
           <sup>&nbsp;{{ len .Pages }}</sup>
         </h2>
         <!-- Agrupa posts do ano por mês -->
-        {{- range .Pages.GroupByDate "January" }}
+        {{- range .Pages.GroupByDate "01" }}
         <div class="blog__month">
-          <h3 class="blog__month--header" id="{{ $year }}-{{ .Key }}">
-              {{- .Key -}}
+          {{- $monthKey := printf "%02d" (int .Key) }}
+          <h3 class="blog__month--header" id="{{ $year }}-{{ $monthKey }}">
+              {{ i18n (printf "month_%s" $monthKey) }}
             <sup>&nbsp;{{ len .Pages }}</sup>
           </h3>
           <div class="blog__post">
